@@ -1,0 +1,432 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    background-color: #222; /* Fondo oscuro para un ambiente místico */
+    color: #e0e0e0; /* Texto claro */
+    overflow-x: hidden; /* Prevenir scroll horizontal no deseado */
+}
+
+/* Header - La Conciencia Superior */
+.site-header {
+    background: linear-gradient(90deg, #1a1a1a, #3a005d); /* Gradiente oscuro y místico */
+    color: #fff;
+    padding: 1.5rem 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.7); /* Brillo púrpura */
+}
+
+.logo p {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: rgba(128, 0, 128, 0.3);
+    color: #fff;
+}
+
+/* Secciones Principales - El Universo del NEXO */
+.main-sections-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #333; /* Fondo para cada sección */
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #a020f0; /* Púrpura vibrante */
+    text-shadow: 0 0 8px rgba(160, 32, 240, 0.5);
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #bbb;
+}
+
+/* Hero Section - El Portal */
+#hero-portal {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://www.backmarket.com/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D1920/https://images.ctfassets.net/mmeshd7gafk1/NqbgS5c30ueCeP3zSwFgT/bfa60cb0c156d2d2e0e2d89ea130b18b/Web-Desktop-Photo_mess.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 0; /* Sin bordes redondeados para que sea full-width */
+    margin: -20px -20px 40px -20px; /* Extender un poco hacia los lados */
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.hero-text h2 {
+    font-size: 3.5em;
+    color: #00ffff; /* Cian brillante */
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.3em;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #a020f0;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(160, 32, 240, 0.4);
+}
+
+.cta-button:hover {
+    background-color: #800080;
+    transform: scale(1.05);
+}
+
+/* Sección Filosofía - El Proceso de Reencarnación */
+.philosophy-section h2 {
+    color: #00ffff;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.process-step {
+    background-color: #444;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #555;
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+}
+
+.process-step img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.process-step h3 {
+    color: #a020f0;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    font-size: 0.95em;
+    color: #bbb;
+}
+
+/* Catálogo de Productos - Seres Reencarnados */
+.products-reincarnated-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#cosmic-filters {
+    background-color: #444;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#cosmic-filters h3 {
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group h4 {
+    color: #e0e0e0;
+    margin-bottom: 8px;
+}
+
+.filter-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 0.9em;
+}
+
+.filter-group input[type="checkbox"],
+.filter-group select {
+    margin-right: 5px;
+    background-color: #333;
+    border: 1px solid #a020f0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.filter-group select option {
+    background-color: #333;
+    color: #fff;
+}
+
+.apply-cosmic-filters {
+    background-color: #00ffff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.apply-cosmic-filters:hover {
+    background-color: #00dddd;
+    transform: scale(1.05);
+}
+
+.reincarnated-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Estilo de la carta de producto (Seres Reencarnados) */
+.product-card {
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(160, 32, 240, 0.4);
+    border-color: #a020f0;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 220px; /* Altura fija */
+    object-fit: contain; /* Para que la imagen se ajuste */
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #444;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.3em;
+    margin: 15px 10px 8px;
+    color: #00ffff;
+}
+
+.product-card .price {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #28a745; /* Verde vibrante */
+    margin-bottom: 8px;
+}
+
+.product-card .seller,
+.product-card .reviews {
+    font-size: 0.9em;
+    color: #bbb;
+    margin: 0 10px 5px;
+}
+
+/* Sección de Contribución - Tu Aporte */
+.contribution-section h2 {
+    color: #a020f0;
+}
+
+.contribution-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contribution-card {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #666;
+    transition: background-color 0.3s ease;
+}
+
+.contribution-card:hover {
+    background-color: #555;
+}
+
+.contribution-card img {
+    max-width: 80%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5)); /* Sombra de neón */
+}
+
+.contribution-card h3 {
+    color: #00ffff;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+/* Footer - El Ecosistema Circular */
+.site-footer {
+    background: linear-gradient(90deg, #3a005d, #1a1a1a);
+    color: #bbb;
+    text-align: center;
+    padding: 2rem 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    color: #a020f0;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries (Ajustes para dispositivos más pequeños) */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #filters,
+    section {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5em;
+    }
+
+    .process-grid,
+    .reincarnated-grid,
+    .contribution-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 2.2em;
+    }
+    .hero-text h2 {
+        font-size: 1.8em;
+    }
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .product-card h3 {
+        font-size: 1.1em;
+    }
+    .product-card .price {
+        font-size: 1.5em;
+    }
+}

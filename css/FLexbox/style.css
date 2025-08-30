@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nike-black: #111111;
+    --nike-white: #ffffff;
+    --nike-gray: #f5f5f5;
+    --nike-red: #fe2c54;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--nike-black);
+    background-color: var(--nike-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--nike-black);
+    color: var(--nike-white);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px;
+    filter: invert(100%);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--nike-white);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--nike-gray);
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+    background-color: var(--nike-gray);
+    border-radius: 10px;
+}
+
+.hero-text {
+    flex: 1;
+    padding-left: 3rem;
+}
+
+.hero-text h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: var(--nike-black);
+    line-height: 1;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: #333;
+}
+
+.cta-button {
+    background-color: var(--nike-black);
+    color: var(--nike-white);
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    padding-right: 3rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Products Section */
+.products-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    color: var(--nike-black);
+    font-family: 'Anton', sans-serif;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: var(--nike-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33% - 2rem);
+    min-width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    color: var(--nike-black);
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.product-card .price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--nike-red);
+}
+
+.main-footer {
+    background-color: var(--nike-black);
+    color: var(--nike-white);
+    padding: 2.5rem 2rem;
+    margin-top: auto;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto 2rem auto;
+    gap: 2rem;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--nike-white);
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col a {
+    color: var(--nike-white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: var(--nike-gray);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+}
+
+
+@media (max-width: 1024px) {
+    .main-header, .main-content, .main-footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .hero-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .hero-image {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .products-grid {
+        gap: 1.5rem;
+    }
+
+    .product-card {
+        flex: 1 1 calc(50% - 1.5rem);
+    }
+
+    .footer-columns {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+    }
+
+    .products-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .product-card {
+        flex: 1 1 100%;
+        max-width: 400px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-col ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header, .main-content, .main-footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .products-section h2 {
+        font-size: 2rem;
+    }
+}

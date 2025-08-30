@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia de Ciudades: ¿Cuánto Sabes de Madrid?</title>
+    <meta
+      name="description"
+      content="Un cuestionario interactivo para poner a prueba tus conocimientos sobre la historia, cultura, monumentos y curiosidades de la ciudad de Madrid."
+    />
+    <meta
+      name="keywords"
+      content="Madrid, España, ciudad, preguntas, trivia, cultura, historia, monumentos, curiosidades, Plaza Mayor, Retiro, Cibeles"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1149963.jpg&f=1&nofb=1&ipt=1ba04f6dcaa1d76a3d98a3d0c893e262248dba2527c8f3afbcd34cf2efed63a3"
+        alt="Vista de la Gran Vía en Madrid con el Edificio Metrópolis"
+        title="Gran Vía, Madrid"
+        width="800"
+        height="450"
+      />
+      <h1>Trivia: Descubre los Secretos de Madrid</h1>
+      <p>
+        ¿Conoces bien la capital de España? Responde estas preguntas y demuestra
+        tu conocimiento sobre Madrid.
+      </p>
+    </header>
+
+    <main>
+      <form>
+        <fieldset>
+          <legend>Monumentos y Lugares Emblemáticos</legend>
+          <div>
+            <p>1. ¿Cómo se llama la famosa plaza con el Oso y el Madroño?</p>
+            <input
+              type="radio"
+              id="madrid_q1_a"
+              name="madrid_q1"
+              value="Plaza Mayor"
+            />
+            <label for="madrid_q1_a">Plaza Mayor</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="madrid_q1_b"
+              name="madrid_q1"
+              value="Puerta del Sol"
+            />
+            <label for="madrid_q1_b">Puerta del Sol</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="madrid_q1_c"
+              name="madrid_q1"
+              value="Plaza de Cibeles"
+            />
+            <label for="madrid_q1_c">Plaza de Cibeles</label>
+          </div>
+
+          <div>
+            <label for="madrid_q2"
+              >2. ¿Cuál de estos museos se encuentra en el Paseo del
+              Prado?</label
+            >
+            <select id="madrid_q2" name="madrid_q2_museum">
+              <option value="">--Selecciona una opción--</option>
+              <option value="Reina Sofia">Museo Reina Sofía</option>
+              <option value="Thyssen-Bornemisza">
+                Museo Thyssen-Bornemisza
+              </option>
+              <option value="Prado">Museo del Prado</option>
+            </select>
+          </div>
+
+          <div>
+            <p>3. ¿Qué parque es conocido como el "pulmón de Madrid"?</p>
+            <input
+              type="text"
+              id="madrid_q3"
+              name="madrid_q3_park"
+              placeholder="Nombre del parque"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Cultura y Curiosidades</legend>
+          <div>
+            <p>
+              4. ¿Cuál es el plato típico madrileño a base de garbanzos,
+              verduras y carnes?
+            </p>
+            <div>
+              <input
+                type="radio"
+                id="madrid_q4_a"
+                name="madrid_q4"
+                value="Cocido Madrileño"
+              />
+              <label for="madrid_q4_a">Cocido Madrileño</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="madrid_q4_b"
+                name="madrid_q4"
+                value="Paella"
+              />
+              <label for="madrid_q4_b">Paella</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="madrid_q4_c"
+                name="madrid_q4"
+                value="Tortilla Española"
+              />
+              <label for="madrid_q4_c">Tortilla Española</label>
+            </div>
+          </div>
+
+          <div>
+            <p>5. ¿Qué días se celebra el famoso rastro de Madrid?</p>
+            <div>
+              <input
+                type="checkbox"
+                id="madrid_q5_a"
+                name="madrid_q5_days[]"
+                value="Sabado"
+              />
+              <label for="madrid_q5_a">Sábado</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="madrid_q5_b"
+                name="madrid_q5_days[]"
+                value="Domingo"
+              />
+              <label for="madrid_q5_b">Domingo</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="madrid_q5_c"
+                name="madrid_q5_days[]"
+                value="Festivo"
+              />
+              <label for="madrid_q5_c">Día festivo</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div>
+          <button type="submit">Enviar Respuestas</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Trivia de Ciudades. Todos los derechos reservados.</p>
+      <nav>
+        <a
+          href="https://es.wikipedia.org/wiki/Madrid"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Más sobre Madrid</a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>

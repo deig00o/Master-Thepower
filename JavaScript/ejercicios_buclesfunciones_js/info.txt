@@ -1,0 +1,7 @@
+ desarrollowebfp@thepower.education con el asunto "Ejercicios Bucles y Funciones JS - Vuestro Nombre".Consideraciones
+
+En el caso de ejercicios con funciones ten en cuenta y valora la opción de "abstraer" la función.
+
+Es decir, te facilitaremos un codigo de ejemplo pero debería funcionar pasándole cualquier código similar.
+
+Por ejemplo, si indicamos que hagas una función que sume todos los números de un array de números, debería aceptar cualquier array de números y no solo en dado como ejemplo.

@@ -1,0 +1,26 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.tarjeta-perfil {
+    margin: 50px;
+    border: 5px solid #007bff;
+    background-color: white;
+    text-align: center;
+}
+
+.tarjeta-perfil img {
+    padding: 20px;
+}
+
+.tarjeta-perfil h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tarjeta-perfil p {
+    padding: 20px;
+}

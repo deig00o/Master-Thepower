@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+.contenedor-parrafo {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-trigger {
+    position: relative;
+    /* Necesario para que el tooltip se posicione en relación a esta palabra */
+    color: #007bff;
+    font-weight: bold;
+    cursor: help;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 160px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posiciona el tooltip encima de la palabra */
+    left: 50%;
+    margin-left: -80px; /* Centra el tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Flecha apuntando hacia abajo */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.tooltip-trigger:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
